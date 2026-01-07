@@ -16,11 +16,11 @@ const jwt = require("jsonwebtoken");
 //Middleware
 app.use(cors());
 
-// app.use(cors({
-//   origin: ["https://hostelport.netlify.app"], // your frontend domain
-//   methods: ["GET", "POST", "PUT", "DELETE"],
-//   credentials: true
-// }));
+app.use(cors({
+  origin: ["https://hostelport.netlify.app"], // your frontend domain
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 
 app.use(express.json());
 
