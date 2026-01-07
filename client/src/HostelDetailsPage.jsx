@@ -52,11 +52,11 @@ function HostelDetailsPage() {
     }
   }, [hostelid]);
 
-  const handleBookingChange = (price, title, availablebed, personcount) => {
+  const handleBookingChange = (title,price, availablebed, personcount) => {
     navigate("/paymentpage", {
       state: {
-        rooms: price,
         title: title,
+        price: price,
         bed: availablebed,
         personcount: personcount,
         checkIn,

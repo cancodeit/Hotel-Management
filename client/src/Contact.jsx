@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './css/Contact.css'; 
 import code from "./images/contact1.png";
+import Navbar from './Navbar';
 
 // const API = process.env.REACT_APP_API_BASE_URL;
 
@@ -35,6 +36,7 @@ function Contact() {
 
   return (
     <div className="contactus-container">
+      <Navbar/>
       <div className='contactus-wrapper'>
         <div className="contact-header">
           <div className="contact-text">
