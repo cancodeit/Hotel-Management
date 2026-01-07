@@ -17,7 +17,7 @@ const jwt = require("jsonwebtoken");
 app.use(cors());
 
 app.use(cors({
-  origin: ["https://hostelport.netlify.app"], // your frontend domain
+  origin: ["https://hotel-management-hotel-booking.netlify.app"], // your frontend domain
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
