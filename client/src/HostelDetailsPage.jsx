@@ -33,7 +33,7 @@ function HostelDetailsPage() {
     try {
       const resulthostel = await axios.get(
         // `${API}/roomdetails/${hostelid}/details`
-        `http://localhost:5000/roomdetails/${hostelid}/details`
+        `https://hotel-management-dfxa.onrender.com/roomdetails/${hostelid}/details`
       );
       if (resulthostel.data) {
         setDetails(resulthostel.data);

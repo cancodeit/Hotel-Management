@@ -18,7 +18,7 @@ function Contact() {
     setLoading(true);
     try {
       // await axios.post(`${API}/contact`, { email, name, phone, message });
-      await axios.post(`http://localhost:5000/contact`, { email, name, phone, message });
+      await axios.post(`https://hotel-management-dfxa.onrender.com/contact`, { email, name, phone, message });
       alert("Message sent successfully!");
 
       // Reset form fields

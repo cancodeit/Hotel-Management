@@ -73,7 +73,7 @@ function Navbar1() {
   useEffect(() => {
     axios
       // .get(`${API}/hosteldetails/`)
-      .get(`http://localhost:5000/hosteldetails/`)
+      .get(`https://hotel-management-dfxa.onrender.com/hosteldetails/`)
       .then((res) => setHostels(res.data))
       .catch((err) => console.log(err));
   }, []);

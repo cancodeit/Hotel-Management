@@ -35,7 +35,7 @@ function Signup() {
     event.preventDefault();
 
     // const signData = await axios.post(`${API}/signup`, {
-    const signData = await axios.post("http://localhost:5000/signup", {
+    const signData = await axios.post("https://hotel-management-dfxa.onrender.com/signup", {
       name,
       phoneno,
       email,

@@ -27,7 +27,7 @@ function Login() {
   const handleClick = async (event) => {
     event.preventDefault();
     // const result = await axios.post(`${API}/login`, {
-      const result = await axios.post("http://localhost:5000/login", {
+      const result = await axios.post("https://hotel-management-dfxa.onrender.com/login", {
       email,
       password,
     });
